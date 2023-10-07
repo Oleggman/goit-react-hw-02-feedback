@@ -1,12 +1,14 @@
-export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
+import { StatBox, StatTitle, Rating } from "./Statistics.styled";
+
+export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-    <div>
-      <h3>Statistics</h3>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
+    <StatBox>
+      <StatTitle>Statistics</StatTitle>
+      <Rating>Good: {good}</Rating>
+      <Rating>Neutral: {neutral}</Rating>
+      <Rating>Bad: {bad}</Rating>
       <p>Total: {total}</p>
       <p>Positive percentage: {Math.round(positivePercentage * 100)}%</p>
-    </div>
+    </StatBox>
   );
 }
