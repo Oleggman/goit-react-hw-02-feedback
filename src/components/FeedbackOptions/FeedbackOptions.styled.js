@@ -16,7 +16,7 @@ export const Button = styled.div`
   padding: 10px 15px; 
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 12%;
+  border-radius: 18px;
   user-select: none;
   transition: color 200ms, background 200ms;
 
